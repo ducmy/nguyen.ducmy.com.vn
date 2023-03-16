@@ -4,6 +4,7 @@
       <div class="header_logo_area">
         <h1>
           <a href="/">
+            Nguyễn Đức Mỹ Blog
           </a>
         </h1>
       </div>
@@ -19,6 +20,11 @@
     </div>
 
     <div class="header_nav_area d-none d-md-block">
+      <ul>
+        <li>Trang chủ</li>
+        <li>Giới thiệu</li>
+        <li>Dự Án</li>
+      </ul>
     </div>
   </div>
 </header>
@@ -29,6 +35,9 @@
   </div>
   <div class="header_nav_area">
     <ul class="header_nav">
+      <li>Trang chủ</li>
+      <li>Giới thiệu</li>
+      <li>Dự Án</li>
     </ul>
   </div>
   <div class="header_sns_area">
