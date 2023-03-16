@@ -11,23 +11,12 @@
 // require_once 'utilClass.php';
 // $_util = new util();
 
-define("CACHE_CLEAR", "?202004270001");
+// define("CACHE_CLEAR", "?202004270001");
 
-$company_name = "Ducmy";
+$company_name = "Nguyễn Đức Mỹ";
 
 $description = "Nguyễn Đức Mỹ";
 $keyword = "Software Engineer, IT Jobs, Software Development, IT Consulting, Developer";
-
-$ADMIN_BACKUP_MAIL = array(
-	// "nguyenducmy",
-);
-
-//==============================================================================================
-// basic認証
-//==============================================================================================
-if ($thisPage->developOnly()) {
-	// include_once 'basicAuth.php';
-}
 
 //========================================================================
 // 絵文字削除
@@ -210,13 +199,4 @@ function pagination($pages, $paged, $range = 5)
 		echo '<span>NEXT</span>' . $link_mark . '</a></li>';
 	}
 	echo ('</ul>');
-}
-
-add_action('template_redirect', 'is404_redirect_home');
-function is404_redirect_home()
-{
-	if (is_404()) {
-		wp_safe_redirect(home_url('/'), 301);
-		exit();
-	}
 }
