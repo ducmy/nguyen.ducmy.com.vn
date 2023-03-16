@@ -2,24 +2,24 @@
 //==============================================================================================
 // prepend
 //==============================================================================================
-include_once 'config.php';
-session_start();
+// include_once 'config.php';
+// session_start();
 
-require_once 'pageClass.php';
-$thisPage = new page();
+// require_once 'pageClass.php';
+// $thisPage = new page();
 
-require_once 'utilClass.php';
-$_util = new util();
+// require_once 'utilClass.php';
+// $_util = new util();
 
 define("CACHE_CLEAR", "?202004270001");
 
-$company_name = "テスト";
+$company_name = "Ducmy";
 
-$description = "テスト";
-$keyword = "テスト";
+$description = "Nguyễn Đức Mỹ";
+$keyword = "Software Engineer, IT Jobs, Software Development, IT Consulting, Developer";
 
 $ADMIN_BACKUP_MAIL = array(
-	// "s.katayama@canvas-works.jp",
+	// "nguyenducmy",
 );
 
 //==============================================================================================
