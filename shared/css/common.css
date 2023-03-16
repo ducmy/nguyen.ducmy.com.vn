@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/*=============================================================================
+
+共通
+
+=============================================================================*/
+html {
+  -webkit-font-smoothing: antialiased;
+  /* safariちらつき回避 */
+}
+
+/*---  Font  ---*/
+@font-face {
+  font-family: 'NotoSansJpSs';
+  font-style: 'normal';
+  font-weight: 400;
+  src: url('../fonts/NotoSansJP-Regular-subset.woff') format('woff'), url('../fonts/NotoSansJP-Regular-subset.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoSansJpSs';
+  font-style: 'medium';
+  font-weight: 500;
+  src: url('../fonts/NotoSansJP-Medium-subset.woff') format('woff'), url('../fonts/NotoSansJP-Medium-subset.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoSansJpSs';
+  font-style: 'bold';
+  font-weight: 700;
+  src: url('../fonts/NotoSansJP-Bold-subset.woff') format('woff'), url('../fonts/NotoSansJP-Bold-subset.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'OpenSansCondensed';
+  font-style: 'bold';
+  font-weight: 700;
+  src: url('../fonts/OpenSansCondensed-Bold.ttf') format('truetype');
+}
+
+body {
+  font-family: 'NotoSansJpSs', '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', YuGothic, 'ヒラギノ角ゴシック', 'Hiragino Sans',
+    'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  color: #373737;
+  width: 100%;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.full_img {
+  max-width: unset;
+  width: 100%;
+}
+
+a {
+  color: #231815;
+  position: relative;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #aaa;
+}
+
+a:focus {
+  text-decoration: none;
+  color: #aaa;
+}
+
+a:hover img {
+  opacity: 0.8;
+}
+
+.relative_area {
+  position: relative;
+}
+
+.common_width {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  a[href*="tel:"] {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+  }
+
+  .tel_a {
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .tel_a a:hover {
+    color: #373737;
+  }
+}

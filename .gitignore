@@ -1,0 +1,4 @@
+/.vscode
+/htdocs
+/db/*
+.DS_Store
